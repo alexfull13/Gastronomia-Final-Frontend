@@ -1,0 +1,5 @@
+1. 
+npm install @angular-devkit/build-angular@0.13.8  @angular-devkit/build-ng-packagr@0.13.8
+--------------------------------------------------------------------------------------------
+2.
+npm install
