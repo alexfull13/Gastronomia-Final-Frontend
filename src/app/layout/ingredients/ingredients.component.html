@@ -1,0 +1,54 @@
+<div class="col col-xl-8 col-lg-12">
+
+  <h1>Escoga ingredientes</h1>
+
+  <select class="form-control"  [(ngModel)]="data.product_id">
+    <option *ngFor="let p of products" value="{{p.id}}">{{p.product_name}}</option>
+    
+  </select>
+  
+  <label>Catidad</label>
+  <input class="form-control" type="number" [(ngModel)]="data.quantity">
+
+  <label>Unidad</label>
+  <input class="form-control" type="text" [(ngModel)]="data.unity">
+  <pre>
+
+    <button type="button" class="btn btn-secondary" (click)="postIngredient()">Añadir Ingrediente</button><br>
+    <button type="button" class="btn btn-secondary"  routerLink="/recipe">Terminar Receta</button>
+    
+  </pre>
+
+  <div>
+  
+
+  <table class="table" >
+      <thead>
+        <h1>Ingredientes</h1>
+    <tr>
+                            
+          <th>Ingredientes</th>
+          <th>Unidad</th>
+          <th>Cantidad</th>
+          
+       
+       
+      </tr>
+      </thead >
+      <tbody>
+      <tr *ngFor="let d of detalle ">
+      
+      <td>{{d.product_name}}</td>
+      <td>{{d.unity}}</td>
+      <td>{{d.quantity}}</td>
+      
+
+      </tr>
+
+      
+     
+    
+      </tbody>
+  </table>
+
+</div>

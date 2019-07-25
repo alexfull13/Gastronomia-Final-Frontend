@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col col-xl-6 col-lg-12">
+      <div class="card mb-3">
+          <div class="card-header">
+              Crear Producto
+          </div>
+          <div class="card-body table-responsive">
+            <fieldset class="form-group">
+              <label>Ingrese nombre del producto</label>
+              <input class="form-control" [(ngModel)]="data.product_name">
+
+              <label>Ingrese categoria del producto</label>
+              <input class="form-control" [(ngModel)]="data.category_name">
+              <label>Ingrese costo</label>
+              <input class="form-control" type="number" [(ngModel)]="data.cost">
+
+            
+
+              
+          </fieldset>
+          
+          </div>
+          <button type="button" class="btn btn-secondary" (click)="postProduct()"  >Crear Producto</button>
+
+      </div>

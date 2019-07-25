@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+ 
+</head>
+<body>
+
+  
+    <div class="row justify-content-md-center">
+        <div class="col-md-9">
+          <img src="https://pbs.twimg.com/profile_images/1080483700104708096/8Rr5M4AR_400x400.jpg" class="user-avatar" width="150px"/>
+          
+          <h1>Recetario </h1>
+          
+          
+              <table class="table">
+                  <thead>
+                  <tr>
+                      
+                      <th>Nombre de las Recetas</th>
+                      <th></th>
+                      
+                   
+                   
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr *ngFor="let r of recipes">
+                  
+                      <td>{{r.recipe_name}}</td>
+                      
+                      <td> <a routerLink="/recetario/{{r.id}}">
+                        <i class="fa fa-pencil"> Ver Mas
+                          
+                        </i>
+                        </a> 
+                        </td>
+                     
+                  </tr>
+                 
+                
+                  </tbody>
+              </table>
+  
+      
+  
+  
+   
+      </div>
+    </div>
+    
+  
+</body>
+</html>
+
+ 

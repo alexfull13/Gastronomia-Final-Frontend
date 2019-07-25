@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+      <main role="main" class="container my-auto">
+            <div class="row">
+                <div id="login" class="col-lg-4 offset-lg-4 col-md-6 offset-md-3
+                    col-12">
+                    <h2 class="text-center">Gastronomia</h2>
+                    <img class="img-fluid mx-auto d-block rounded"
+                        src="https://pbs.twimg.com/profile_images/1080483700104708096/8Rr5M4AR_400x400.jpg" />
+
+                        <label>Username</label>
+                        <input class="form-control" [(ngModel)]="username">
+
+                        <label>Contraseña</label>
+                        <input class="form-control" type="password" [(ngModel)]="password">
+                      
+                      
+                      <br>
+                      
+                      <button type="button" class="btn btn-primary" (click)="Login()">Ingresar</button>
+                      <br>  
+                      <br>    
+
+                    
+                      <button type="button" class="btn btn-primary"  routerLink="/reset-password">Inicio</button>
+
+                        
+                        
+                </div>
+            </div>
+        </main>
+</body>
+</html>
+
+<img src="" class="user-avatar" width="150px"/>

@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col col-xl-6 col-lg-12">
+      <div class="card mb-3">
+          <div class="card-header">
+              Crear Receta
+          </div>
+          <div class="card-body table-responsive" >
+            <fieldset class="form-group">
+              <label>Ingrese nombre de la receta</label>
+              <input class="form-control" [(ngModel)]="data.recipe_name">
+
+              <label>Ingrese tecnica</label>
+              <input class="form-control" [(ngModel)]="data.technique_name">
+
+              <label>Preparacion</label>
+              <textarea class="form-control"  [(ngModel)]="data.preparedness"></textarea>
+
+              <label>Numero de personas </label>
+              <input class="form-control" type="number" [(ngModel)]="data.pax">
+
+            
+
+              
+          </fieldset>
+          
+          </div>
+          <div *ngFor="let u of ultimo">
+          <button type="button" class="btn btn-secondary" (click)="postRecipe()" routerLink="/ingredient/{{u.id+1}}">Crear Receta</button>
+        </div>
+      </div>

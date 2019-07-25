@@ -1,0 +1,42 @@
+<pre>
+  <button type="button" type="button" class="btn btn-secondary" [routerLink]="['/product-create']">Crear Nueva Producto</button>
+ </pre>
+ 
+ <div class="row">
+   <div class="col col-xl-12 col-lg-12">
+       <div class="card mb-3"> 
+           <div class="card-header">
+               Productos
+           </div>
+           <div class="card-body table-responsive">
+               <table class="table">
+                   <thead>
+                   <tr>
+                       
+                       <th>Nombre del Producto </th>
+                       <th>Categoria</th>
+                       <th>Precio</th>
+                       <th></th>
+                    
+                    
+                   </tr>
+                   </thead>
+                   <tbody>
+                   <tr *ngFor="let p of products">
+                   
+                       <td>{{p.product_name}}</td>
+                       <td>{{p.category_name}}</td>
+                       <td>{{p.cost}}</td>
+                       <td> <a routerLink="/product-edit/{{p.id}}">
+                         <i class="fa fa-pencil"></i>
+                         </a> 
+                         </td>
+                      
+                   </tr>
+                  
+                 
+                   </tbody>
+               </table>
+ 
+           </div>
+       </div>
